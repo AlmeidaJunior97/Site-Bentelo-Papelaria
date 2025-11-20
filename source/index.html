@@ -3,27 +3,143 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bentelo Papelaria</title>
+    <title>Flor de Papel - Papelaria Personalizada</title>
+    <!-- Importação de fontes limpas e elegantes (Montserrat e Playfair Display) -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    
+    <!-- Link para o arquivo CSS externo (styles.css) -->
+    <link rel="stylesheet" href="styles.css"> 
 </head>
 <body>
-    <header class="header">
-        <a href="#" class="logo">
-                <img src="imagens/logo-bentelo.png" alt="logo">    
-        </a>
-        <nav>
-            <a href="#">Home</a>
-            <a href="#servicos">Serviços</a>
-            <a href="#feedbacks">Feedbacks</a>
-            <a href="#contact">Contato</a>
-            <a href="#address">Endereço</a>       
-                                
-        </nav>
-        <div class="icons">
-
-        </div>
-    </header>
     
+    <nav id="menuMobile">
+        <div class="container">
+            <div class="logo"><a href="#home"><img src="imagens/logo-bentelo.png" alt="logo"></a></div>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#servicos">Serviços</a></li>
+                <li><a href="#feedbacks">Feedbacks</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- SEÇÃO HOME / BANNER CHAMATIVO -->
+    <section id="home">
+        <div class="container home-content">
+            <!-- Título Principal / Slogan -->
+            <h1>
+                Transforme Momentos em Lembranças Inesquecíveis.
+            </h1>
+            <p>
+                Design exclusivo e o toque artesanal que a sua celebração merece.
+            </p>
+            <!-- Botão de CTA -->
+            <a href="#servicos" class="cta-button">Ver Nossos Serviços</a>
+        </div>
+    </section>
+
+    <!-- SEÇÃO SERVIÇOS -->
+    <section id="servicos">
+        <div class="container">
+            <h2>Nossos Toques de Mágica em Papel</h2>
+            <div class="servicos-grid">
+                
+                <!-- Card 1: Convites -->
+                <div class="servico-card">
+                    <span class="icon">💌</span> <!-- Ícone simples de envelope -->
+                    <h3>Convites Personalizados</h3>
+                    <p>Criamos convites de casamento, aniversário e eventos corporativos únicos, que contam a sua história desde o primeiro olhar.</p>
+                </div>
+                
+                <!-- Card 2: Mimos de Festa -->
+                <div class="servico-card">
+                    <span class="icon">🎁</span> <!-- Ícone simples de presente -->
+                    <h3>Mimos e Lembrancinhas</h3>
+                    <p>Caixinhas, toppers, tags e toda a papelaria que transforma a mesa de doces em uma obra de arte temática.</p>
+                </div>
+                
+                <!-- Card 3: Personalizados -->
+                <div class="servico-card">
+                    <span class="icon">✨</span> <!-- Ícone simples de estrela -->
+                    <h3>Papelaria Fina para Data Comemorativas</h3>
+                    <p> Fotos polaroid, Cartões de natal, dia dos pais, das mães e outras datas festivas para você presentear a pessoa querida.</p>
+                </div>
+                
+                <!-- Card 4: Kits Completos -->
+                <div class="servico-card">
+                    <span class="icon">🌸</span> <!-- Ícone simples de flor -->
+                    <h3>Serviçoes utilitários em geral</h3>
+                    <p>Criação de currículo, cardápio, xerox, impressão, trabalho escolar, agendamentos online em serviços públicos. </p>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- SEÇÃO FEEDBACKS -->
+    <section id="feedbacks">
+        <div class="container">
+            <h2>O Que Dizem Nossas Clientes</h2>
+            <div class="feedbacks-grid">
+                
+                <div class="feedback-card">
+                    <div class="rating">⭐⭐⭐⭐⭐</div>
+                    <p>"Os convites de aniversário superaram todas as expectativas! O cuidado com os detalhes e a qualidade do design são impecáveis. Recomendo de olhos fechados!"</p>
+                    <div class="author">- Mariana S.</div>
+                </div>
+                
+                <div class="feedback-card">
+                    <div class="rating">⭐⭐⭐⭐⭐</div>
+                    <p>"Contratei o kit de mimos completo para o aniversário da minha filha. Ficou tudo lindo, harmonioso e com uma identidade visual perfeita. Atendimento nota 10!"</p>
+                    <div class="author">- Patrícia L.</div>
+                </div>
+                
+                <div class="feedback-card">
+                    <div class="rating">⭐⭐⭐⭐⭐</div>
+                    <p>"Precisei de um trabalho escolar com urgencia e a Vitória me ajudou rapidamente e fez o trabalho perfeito pro meu filho, muito obrigado Amiga s2 "</p>
+                    <div class="author">- Camila G.</div>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- SEÇÃO FALE CONOSCO -->
+    <section id="contato">
+        <div class="container">
+            <h2 style="margin-bottom: 30px;">Fale Conosco</h2>
+            <div class="contato-form-container">
+                <p>
+                    Tem um projeto especial ou uma dúvida? Mande uma mensagem!
+                </p>
+                
+                <!-- Formulário de Contato Simples -->
+                <form class="contato-form" action="#" method="POST">
+                    
+                    <label for="nome">Seu Nome</label>
+                    <input type="text" id="nome" name="nome" required placeholder="Seu nome completo">
+                    
+                    <label for="email">Seu E-mail</label>
+                    <input type="email" id="email" name="email" required placeholder="email@exemplo.com">
+                    
+                    <label for="mensagem">Mensagem / Detalhes do Projeto</label>
+                    <textarea id="mensagem" name="mensagem" required placeholder="Conte-nos sobre o que você precisa!"></textarea>
+                    
+                    <button type="submit" class="cta-button">Enviar Mensagem</button>
+                    
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- RODAPÉ -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Bentelo Papelaria personalizada. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
 </body>
 </html>
-
